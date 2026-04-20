@@ -27,6 +27,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -45,102 +48,158 @@
     <!-- Page Header Start -->
     
 
+    
     <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-taxi text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3" data-aos="fade-up">
+        <h1 class="display-4 text-uppercase text-center mb-5">
+            Our <span class="text-primary">Services</span>
+        </h1>
+
+        <div class="row">
+
+            <!-- Bike Reviews -->
+            <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="bg-primary d-flex align-items-center justify-content-center ml-n4" style="width:80px;height:80px;">
+                            <i class="fa fa-motorcycle text-secondary fa-2x"></i>
                         </div>
-                        <h4 class="text-uppercase mb-3">Car Rental</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                        <h1 class="display-2 text-white mt-n2 m-0">01</h1>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Car Financing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-car text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Car Inspection</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-cogs text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">04</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Auto Repairing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-spray-can text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">05</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Auto Painting</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-pump-soap text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">06</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
+                    <h4 class="text-uppercase mb-3">Bike Reviews</h4>
+                    <p class="m-0">
+                        In-depth bike reviews from budget to premium models with real-world performance, mileage insights, and honest opinions.
+                    </p>
                 </div>
             </div>
+
+            <!-- Car Reviews -->
+            <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="bg-primary d-flex align-items-center justify-content-center ml-n4" style="width:80px;height:80px;">
+                            <i class="fa fa-car text-secondary fa-2x"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">02</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Car Reviews</h4>
+                    <p class="m-0">
+                        Detailed car reviews covering design, features, safety, performance, and value for money to help you choose confidently.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Comparison -->
+            <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="bg-primary d-flex align-items-center justify-content-center ml-n4" style="width:80px;height:80px;">
+                            <i class="fa fa-balance-scale text-secondary fa-2x"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Vehicle Comparison</h4>
+                    <p class="m-0">
+                        Side-by-side comparisons of bikes and cars to help you identify the best option based on your needs and budget.
+                    </p>
+                </div>
+            </div>
+
+            <!-- User Feedback -->
+            <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="bg-primary d-flex align-items-center justify-content-center ml-n4" style="width:80px;height:80px;">
+                            <i class="fa fa-comments text-secondary fa-2x"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">User Feedback</h4>
+                    <p class="m-0">
+                        Real customer experiences and feedback that highlight pros, cons, and long-term reliability of vehicles.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Buying Assistance -->
+            <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="bg-primary d-flex align-items-center justify-content-center ml-n4" style="width:80px;height:80px;">
+                            <i class="fa fa-handshake text-secondary fa-2x"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Buying Assistance</h4>
+                    <p class="m-0">
+                        Personalized guidance for people who are confused about choosing the right bike or car based on usage and budget.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Virtual Experience -->
+            <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="bg-primary d-flex align-items-center justify-content-center ml-n4" style="width:80px;height:80px;">
+                            <i class="fa fa-vr-cardboard text-secondary fa-2x"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Virtual Experience</h4>
+                    <p class="m-0">
+                        Experience vehicles virtually with detailed visuals and insights before making your final purchase decision.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Services End -->
+</div>
+<!-- Services End -->
+    
 
 
     <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-banner py-5 px-4 text-center">
-                <div class="py-5">
-                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
-                    <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
-                    <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
-                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+    <!-- Highlights -->
+     <div class="container pt-5 pb-3">
+        <div class="row mt-4" data-aos="fade-up">
+
+            <!-- Reviews -->
+            <div class="col-lg-4 mb-3" data-aos="fade-right">
+                <div class="d-flex align-items-center bg-light p-4 mb-4 feature-card" style="height: 150px; border-radius: 10px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary mr-4" 
+                         style="width: 90px; height: 90px; border-radius: 10px;">
+                        <i class="fa fa-2x fa-star text-secondary"></i>
+                    </div>
+                    <h5 class="text-uppercase m-0">Trusted Reviews</h5>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <!-- Comparison -->
+            <div class="col-lg-4 mb-3" data-aos="fade-up">
+                <div class="d-flex align-items-center bg-secondary p-4 mb-4 feature-card" style="height: 150px; border-radius: 10px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary mr-4" 
+                         style="width: 90px; height: 90px; border-radius: 10px;">
+                        <i class="fa fa-2x fa-balance-scale text-secondary"></i>
+                    </div>
+                    <h5 class="text-light text-uppercase m-0">Smart Comparisons</h5>
+                </div>
+            </div>
+
+            <!-- Guidance -->
+            <div class="col-lg-4 mb-3" data-aos="fade-left">
+                <div class="d-flex align-items-center bg-light p-4 mb-4 feature-card" style="height: 150px; border-radius: 10px;">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary mr-4" 
+                         style="width: 90px; height: 90px; border-radius: 10px;">
+                        <i class="fa fa-2x fa-lightbulb text-secondary"></i>
+                    </div>
+                    <h5 class="text-uppercase m-0">Buying Guidance</h5>
+                </div>
+            </div>
+
+        </div></div>
     <!-- Banner End -->
 
 
@@ -185,7 +244,16 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
+     
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

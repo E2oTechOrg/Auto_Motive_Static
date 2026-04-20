@@ -17,7 +17,9 @@
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-    
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -41,10 +43,10 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-                            <h1 class="display-1 text-white mb-md-4">Best Rental Cars In Your Location</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                        <div class="p-3" style="max-width: 900px;" data-aos="zoom-in">
+                            <h4 class="text-white text-uppercase mb-md-3">Automotive Enthusiast</h4>
+                            <h1 class="display-1 text-white mb-md-4">Explore Bikes & Cars Before You Buy</h1>
+                            <a href="car.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Explore Now</a>
                         </div>
                     </div>
                 </div>
@@ -52,9 +54,9 @@
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-                            <h1 class="display-1 text-white mb-md-4">Quality Cars with Unlimited Miles</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                            <h4 class="text-white text-uppercase mb-md-3">Trusted Reviews</h4>
+                            <h1 class="display-1 text-white mb-md-4">From Budget to Premium Vehicles</h1>
+                            <a href="service.html" class="btn btn-primary py-md-3 px-md-5 mt-2">View Reviews</a>
                         </div>
                     </div>
                 </div>
@@ -76,122 +78,113 @@
 
     <!-- About Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">01</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Royal Cars</span></h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <img class="w-75 mb-4" src="img/about.png" alt="">
-                    <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos amet, amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua sea eos sit justo, no ipsum sanctus sanctus no et no ipsum amet, tempor labore est labore no. Eos diam eirmod lorem ut eirmod, ipsum diam sadipscing stet dolores elitr elitr eirmod dolore. Magna elitr accusam takimata labore, et at erat eirmod consetetur tempor eirmod invidunt est, ipsum nonumy at et.</p>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-headset text-secondary"></i>
-                        </div>
-                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-car text-secondary"></i>
-                        </div>
-                        <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
-                        </div>
-                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
-                    </div>
-                </div>
+    <div class="container pt-5 pb-3">
+        <h1 class="display-1 text-primary text-center">01</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5" data-aos="fade-down">
+            Welcome To <span class="text-primary">Automotive Enthusiast</span>
+        </h1>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <img class="w-75 mb-4" src="img/about.png" alt="" data-aos="zoom-in">
+                
+                <p  data-aos="fade-up">
+                    We provide detailed bike and car reviews, comparisons, and real user feedback 
+                    to help customers choose the right vehicle. From budget-friendly options to 
+                    premium bikes and cars, our platform offers clear insights and honest opinions.
+                </p>
+
+                <p  data-aos="fade-up">
+                    Our service is specially designed for people who are confused or facing 
+                    difficulties in buying a new bike or car. We simplify the decision-making 
+                    process and give a clear understanding of vehicles before purchase through 
+                    a virtual experience.
+                </p>
             </div>
         </div>
     </div>
+</div>
     <!-- About End -->
     
 
     <!-- Services Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
+        <div class="container pt-5 pb-3" data-aos="fade-up">
             <h1 class="display-1 text-primary text-center">02</h1>
             <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-2">
+                <div class="col-lg-4 col-md-6 mb-2"  data-aos="fade-up" data-aos-delay="100">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-taxi text-secondary"></i>
+                                <i class="fa fa-2x fa-motorcycle text-secondary"></i>
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">01</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Car Rental</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                        <h4 class="text-uppercase mb-3">Bike Reviews</h4>
+                        <p class="m-0">Detailed reviews of bikes from budget to premium with real insights.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-2">
+                <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Car Financing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
                                 <i class="fa fa-2x fa-car text-secondary"></i>
                             </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Car Inspection</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                       <h4 class="text-uppercase mb-3">Car Reviews</h4>
+                        <p class="m-0">Comprehensive car reviews covering features, performance and value.</p>
+
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-2">
+                <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-cogs text-secondary"></i>
+                                <i class="fa fa-2x fa-balance-scale text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Vehicle Comparison</h4>
+                        <p class="m-0">Compare multiple bikes and cars to find the best option for you.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-users text-secondary"></i>
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">04</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Auto Repairing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                        <h4 class="text-uppercase mb-3">User Feedback</h4>
+                        <p class="m-0">Real user experiences to help you understand pros and cons.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-2">
+                <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-spray-can text-secondary"></i>
+                                <i class="fa fa-2x fa-handshake text-secondary"></i>
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">05</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Auto Painting</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                        <h4 class="text-uppercase mb-3">Buying Assistance</h4>
+                        <p class="m-0">Helping customers who are confused in choosing the right vehicle.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-2">
+                <div class="col-lg-4 col-md-6 mb-2" data-aos="fade-up" data-aos-delay="600">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-pump-soap text-secondary"></i>
+                                <i class="fa fa-2x fa-globe text-secondary"></i>
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">06</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                       <h4 class="text-uppercase mb-3">Virtual Experience</h4>
+                        <p class="m-0">Explore vehicles virtually before making your final decision.</p>
                     </div>
                 </div>
             </div>
@@ -201,28 +194,65 @@
 
 
     <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-banner py-5 px-4 text-center">
-                <div class="py-5">
-                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
-                    <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
-                    <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
-                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+    <div class="container-fluid py-5" >
+    <div class="container py-5" data-aos="fade-up">
+        
+        <!-- Background Wrapper -->
+        <div class="bg-banner py-5 px-4" style="border-radius: 15px;">
+            
+            <div class="row">
+
+                <!-- Mission -->
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="p-5 text-center h-100 mission-card"
+                         style="background: transparent; border-radius: 15px;">
+
+                        <i class="fa fa-bullseye text-primary mb-4" style="font-size: 45px;"></i>
+
+                        <h2 class="text-uppercase text-primary mb-3">Our Mission</h2>
+
+                        <p class="text-light" style="font-size: 17px;">
+                            Our mission is to help people choose and drive bikes and cars with complete 
+                            peace of mind by providing honest reviews, comparisons, and real user insights.
+                        </p>
+
+                    </div>
                 </div>
+
+                <!-- Vision -->
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="p-5 text-center h-100 mission-card"
+                         style="background: transparent; border-radius: 15px;">
+
+                        <i class="fa fa-eye text-primary mb-4" style="font-size: 45px;"></i>
+
+                        <h2 class="text-uppercase text-primary mb-3">Our Vision</h2>
+
+                        <p class="text-light" style="font-size: 17px;">
+                            Our vision is to explore automobile products across the globe and provide 
+                            a virtual experience to people, helping them understand vehicles before 
+                            making a purchase decision.
+                        </p>
+
+                    </div>
+                </div>
+
             </div>
+
         </div>
+
     </div>
+</div>
     <!-- Banner End -->
 
 
     <!-- Rent A Car Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
+        <div class="container pt-5 pb-3" data-aos="fade-left">
             <h1 class="display-1 text-primary text-center">03</h1>
             <h1 class="display-4 text-uppercase text-center mb-5">Gallery</h1>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-2">
+                <div class="col-lg-4 col-md-6 mb-2" data-aos="zoom-in">
                     <div class="rent-item mb-4">
                         <img class="img-fluid mb-4" src="img/New-folder/IMG_0396.JPG.jpeg" alt="">
                         
@@ -265,12 +295,12 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container py-5">
             <h1 class="display-1 text-primary text-center">04</h1>
             <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
             <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-                <div class="team-item">
+                <div class="team-item" data-aos="flip-left">
                     <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Full Name</h4>
@@ -325,42 +355,61 @@
 
 
     <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row mx-0">
-                <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
-                        <div class="text-right">
-                            <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
-                            <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <div class="text-left">
-                            <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
-                            <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
-                        </div>
-                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+    <div class="container-fluid py-5" data-aos="fade-up">
+    <div class="container py-5">
+        <div class="row mx-0">
+
+            <!-- Explore Reviews -->
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-secondary d-flex align-items-center justify-content-between banner-box" style="height: 350px; ">
+                    
+                    <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
+
+                    <div class="text-right">
+                        <h3 class="text-uppercase text-light mb-3">Explore Vehicle Reviews</h3>
+                        
+                        <p class="mb-4 text-light">
+                            Discover detailed reviews of the latest bikes and cars with real insights, 
+                            performance analysis, and expert opinions.
+                        </p>
+
+                        <a class="btn btn-primary py-2 px-4" href="car.html">Explore Now</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Compare Vehicles -->
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-dark d-flex align-items-center justify-content-between banner-box" style="height: 350px;">
+                    
+                    <div class="text-left">
+                        <h3 class="text-uppercase text-light mb-3">Compare Before You Buy</h3>
+                        
+                        <p class="mb-4 text-light">
+                            Compare multiple vehicles side by side and choose the best option 
+                            based on price, features, and performance.
+                        </p>
+
+                        <a class="btn btn-primary py-2 px-4" href="car.html">Compare Now</a>
+                    </div>
+
+                    <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                </div>
+            </div>
+
         </div>
     </div>
+</div>
     <!-- Banner End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container py-5">
             <h1 class="display-1 text-primary text-center">05</h1>
             <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
             <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4" data-aos="fade-up">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
@@ -404,68 +453,89 @@
 
     <!-- Contact Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">06</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
-            <div class="row">
-                <div class="col-lg-7 mb-2">
-                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
-                        <form>
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your Name" required="required">
-                                </div>
-                                <div class="col-6 form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your Email" required="required">
-                                </div>
+    <div class="container pt-5 pb-3" data-aos="fade-up">
+        <h1 class="display-1 text-primary text-center">06</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+        <div class="row">
+
+            <!-- Contact Form -->
+            <div class="col-lg-7 mb-2" data-aos="fade-right">
+                <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                    <form>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" placeholder="Your Name" required>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control p-4" placeholder="Subject" required="required">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required="required"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-5 mb-2">
-                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Head Office</h5>
-                                <p>123 Street, New York, USA</p>
+                            <div class="col-6 form-group">
+                                <input type="email" class="form-control p-4" placeholder="Your Email" required>
                             </div>
                         </div>
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Branch Office</h5>
-                                <p>123 Street, New York, USA</p>
-                            </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control p-4" placeholder="Subject" required>
                         </div>
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Customer Service</h5>
-                                <p>customer@example.com</p>
-                            </div>
+                        <div class="form-group">
+                            <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required></textarea>
                         </div>
-                        <div class="d-flex">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Return & Refund</h5>
-                                <p class="m-0">refund@example.com</p>
-                            </div>
+                        <div>
+                            <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-5 mb-2" data-aos="fade-left">
+                <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4 contact-info-box" style="height: 435px; border-radius: 10px;">
+
+                    <!-- Address (Google Maps Link) -->
+                    <div class="d-flex mb-4">
+                        <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                        <div>
+                            <h5 class="text-light">Address</h5>
+                            <a href="https://www.google.com/maps/search/?api=1&query=43+Nakkeran+Street+KK+Nagar+Madurai+625020" 
+                               target="_blank" class="text-light">
+                                43, Nakkeran Street,<br>
+                                K.K.Nagar,<br>
+                                Madurai - 625020
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Phone (Click to Call) -->
+                    <div class="d-flex mb-4">
+                        <i class="fa fa-2x fa-phone-alt text-primary flex-shrink-0 mr-3"></i>
+                        <div>
+                            <h5 class="text-light">Mobile</h5>
+                            <a href="tel:6380223723" class="text-light">6380223723</a>
+                        </div>
+                    </div>
+
+                    <!-- Email (Click to Mail) -->
+                    <div class="d-flex mb-4">
+                        <i class="fa fa-2x fa-envelope text-primary flex-shrink-0 mr-3"></i>
+                        <div>
+                            <h5 class="text-light">Email</h5>
+                            <a href="mailto:team@mrautomotiventhusiast.com" class="text-light">
+                                team@mrautomotiventhusiast.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Website -->
+                    <div class="d-flex">
+                        <i class="fa fa-2x fa-globe text-primary flex-shrink-0 mr-3"></i>
+                        <div>
+                            <h5 class="text-light">Website</h5>
+                            <a href="#" class="text-light">Automotiventhusiast</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
+</div>
     <!-- Contact End -->
 
 
@@ -514,6 +584,15 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
