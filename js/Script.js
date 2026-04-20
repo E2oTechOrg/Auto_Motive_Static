@@ -25,15 +25,39 @@ function loadComponent(id, file) {
 
 function initHeader() {
   const header = document.getElementById("mainHeader");
-  const footer = document.getElementById("footer");
 
-  if (!header || !footer) {
+  if (!header) {
     console.error("Header not found!");
     return;
   }
 
   console.log("Header loaded successfully");
 }
+function initFooter() {
+  const footer = document.getElementById("footer");
+
+  if (!footer) {
+    console.error("Footer not found!");
+    return;
+  }
+
+  console.log("Footer loaded successfully");
+}
 
 loadComponent("header-container", "header.html");
 loadComponent("footer-container", "footer.html");
+
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.getElementById("closeModal");
+
+document.querySelectorAll(".rent-item img").forEach(img => {
+  img.addEventListener("click", function () {
+    modal.style.display = "block";
+    modalImg.src = this.src; // original image
+  });
+});
+
+closeBtn.onclick = () => modal.style.display = "none";
+modal.onclick = () => modal.style.display = "none";

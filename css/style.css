@@ -181,6 +181,18 @@ h6,
     color: var(--light);
 }
 
+
+/* IMAGE FIX */
+.rent-item img {
+    width: 100%;
+    height: 230px;          /* uniform height */
+    object-fit: cover;      /* crop nicely */
+    display: block;
+    
+    transition: transform 0.4s ease;
+}
+
+
 .team-item {
     padding: 30px 30px 0 30px;
     text-align: center;
