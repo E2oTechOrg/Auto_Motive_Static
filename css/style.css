@@ -116,6 +116,15 @@ h6,
         font-weight: 600 !important;
     }
 }
+#header-carousel .carousel-item {
+    height: 650px; /* adjust as needed */
+}
+
+#header-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* prevents distortion */
+}
 
 .page-header {
     height: 400px;
