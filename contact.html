@@ -57,30 +57,60 @@
 
             <!-- Contact Form -->
             <div class="col-lg-7 mb-2" data-aos="fade-right">
-                <div class="contact-form bg-light mb-4 contact-info-box " style="padding: 30px; border-radius: 10px;">
-                    <form>
+                <div class="contact-form bg-light mb-4 contact-info-box" style="padding: 30px; border-radius: 10px;">
+            
+                    <form id="contactForm">
+            
                         <div class="row">
+                            <!-- Name -->
                             <div class="col-6 form-group">
-                                <input type="text" class="form-control p-4" placeholder="Your Name" required>
+                                <input type="text" name="name" class="form-control p-4" placeholder="Your Name" required>
                             </div>
+            
+                            <!-- Email -->
                             <div class="col-6 form-group">
-                                <input type="email" class="form-control p-4" placeholder="Your Email" required>
+                                <input type="email" name="email" class="form-control p-4" placeholder="Your Email" required>
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control p-4" placeholder="Subject" required>
+            
+                        <div class="row">
+                            <!-- Phone -->
+                            <div class="col-6 form-group">
+                                <input type="tel" name="phone" class="form-control p-4" placeholder="Your Phone Number"
+                                    pattern="[0-9]{10}" required>
+                            </div>
+            
+                            <!-- Enquiry Type -->
+                            <div class="col-6 form-group">
+                                <input list="enquiryOptions" name="enquiry" class="form-control p-4" placeholder="Enquiry Type" required>
+                            
+                                <datalist id="enquiryOptions">
+                                    <option value="Car Inquiry">
+                                    <option value="Bike Inquiry">
+                                    <option value="Vehicle Review">
+                                    <option value="General Question">
+                                </datalist>
+                            </div>
                         </div>
-
+            
+                        <!-- Subject -->
                         <div class="form-group">
-                            <textarea class="form-control py-3 px-4" rows="5" placeholder="Your Message" required></textarea>
+                            <input type="text" name="subject" class="form-control p-4" placeholder="Subject" required>
                         </div>
-
+            
+                        <!-- Message -->
+                        <div class="form-group">
+                            <textarea name="message" class="form-control py-3 px-4" rows="4" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+            
+                        <!-- Submit -->
                         <div>
                             <button class="btn btn-primary py-3 px-5" type="submit">
                                 Send Message
                             </button>
                         </div>
+            
                     </form>
                 </div>
             </div>
@@ -136,39 +166,10 @@
 
 
     <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="owl-carousel vendor-carousel">
-                <div class="bg-light p-4">
-                    <img src="img/vendor-1.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-2.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-3.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-4.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-5.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-6.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-7.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-8.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Vendor End -->
 
-
+<div id="toast" class="toast-msg"></div>
    <!-- Footer Start -->
    <div id="footer-container"></div>
     <!-- Footer End -->
@@ -185,7 +186,37 @@
             once: true
         });
     </script>
+    <script>
+function showToast(message, type = "success") {
+  const toast = document.getElementById("toast");
 
+  toast.textContent = message;
+  toast.className = `toast-msg show ${type}`;
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch("https://script.google.com/macros/s/AKfycbwPstiSq0yjUo2BHTeRWJoqA6U7NzBOvPeFWkr-au_QmUlPNWqybDDYeukGBkXocGFG/exec", {
+        method: "POST",
+        body: formData,
+        mode: "no-cors"
+    })
+    .then(() => {
+        showToast("Message sent successfully!", "success");
+        document.getElementById("contactForm").reset();
+    })
+    .catch(() => {
+        showToast("Something went wrong!", "error");
+    });
+});
+</script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
