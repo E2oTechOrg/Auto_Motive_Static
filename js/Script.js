@@ -1,4 +1,4 @@
-//header
+// header + footer loader
 function loadComponent(id, file) {
   fetch(file)
     .then(res => {
@@ -9,8 +9,10 @@ function loadComponent(id, file) {
       document.getElementById(id).innerHTML = data;
 
       requestAnimationFrame(() => {
+
         if (id === "header-container") {
           initHeader();
+          setActiveMenu();
         }
 
         if (id === "footer-container") {
@@ -33,6 +35,7 @@ function initHeader() {
 
   console.log("Header loaded successfully");
 }
+
 function initFooter() {
   const footer = document.getElementById("footer");
 
@@ -44,17 +47,33 @@ function initFooter() {
   console.log("Footer loaded successfully");
 }
 
+// ✅ Active menu function
+function setActiveMenu() {
+  const links = document.querySelectorAll(".navbar-nav .nav-link");
+  const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+
 loadComponent("header-container", "header.html");
 loadComponent("footer-container", "footer.html");
 
-
+//gallery modal
 document.addEventListener("DOMContentLoaded", function () {
 
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
   const closeBtn = document.getElementById("closeModal");
 
-  // Only run if modal exists (gallery page)
+  // Only run if modal exists
   if (modal && modalImg && closeBtn) {
 
     document.querySelectorAll(".rent-item img").forEach(img => {
