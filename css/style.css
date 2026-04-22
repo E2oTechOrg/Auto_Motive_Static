@@ -172,10 +172,31 @@ select.form-control option[value=""] {
     width: 100%;
     object-fit: cover; /* prevents distortion */
 }
+@media (max-width: 768px) {
+
+  #closeModal {
+    top: 10px !important;
+    right: 20px !important;
+    font-size: 30px !important;
+  }
+
+  #modalImg {
+    max-width: 95% !important;
+    max-height: 80% !important;
+    margin-top: 60px !important;
+  }
+
+}
 .gallery-img {
     width: 100%;
     height: 100px;
     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 60px !important;
+    width: 60px !important;
+  }
 }
 .page-header {
     height: 400px;
@@ -369,7 +390,28 @@ select.form-control option[value=""] {
 .footer-link:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .footer-wrapper .d-flex {
+    flex-direction: row;          /* keep in one line */
+    justify-content: center;      /* center align */
+    flex-wrap: nowrap;            /* prevent breaking */
+    gap: 10px;
+    padding: 0; 
+    margin: 0;
+  }
 
+  .footer-wrapper p {
+    font-size: 12px;              /* reduce size to fit */
+    white-space: nowrap;
+            
+  }
+  .footer-wrapper {
+    padding-left: 50px !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
 /* ===== FEATURE CARDS HOVER ===== */
 
 .feature-card {

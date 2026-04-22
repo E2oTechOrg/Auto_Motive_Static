@@ -48,16 +48,30 @@ loadComponent("header-container", "header.html");
 loadComponent("footer-container", "footer.html");
 
 
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("modalImg");
-const closeBtn = document.getElementById("closeModal");
+document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelectorAll(".rent-item img").forEach(img => {
-  img.addEventListener("click", function () {
-    modal.style.display = "block";
-    modalImg.src = this.src; // original image
-  });
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.getElementById("closeModal");
+
+  // Only run if modal exists (gallery page)
+  if (modal && modalImg && closeBtn) {
+
+    document.querySelectorAll(".rent-item img").forEach(img => {
+      img.addEventListener("click", function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      });
+    });
+
+    closeBtn.onclick = () => modal.style.display = "none";
+
+    modal.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+
+  }
+
 });
-
-closeBtn.onclick = () => modal.style.display = "none";
-modal.onclick = () => modal.style.display = "none";
