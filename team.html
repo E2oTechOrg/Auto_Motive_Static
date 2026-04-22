@@ -27,6 +27,85 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .blog-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-header p {
+  color: #555;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.blog-content h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.blog-content h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.blog-content p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.blog-content li {
+  margin-bottom: 8px;
+}
+
+.cta-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* Ensure all text inside is white */
+.cta-box h3,
+.cta-box p {
+  color: white;
+}
+
+/* Button styling */
+.cta-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #000; /* keep button text black for contrast */
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+    </style>
 </head>
 
 <body>
@@ -45,64 +124,144 @@
     </div>
     <!-- Page Header Start -->
 
+<!-- blog -->
+<section class="blog-container">
+  <div class="blog-header">
+    <h1>Car & Bike Consultant – Smart Buying Guide</h1>
+    <p>
+      Learn how to choose the right car or bike based on budget, performance, and real-world usage.
+    </p>
+  </div>
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="blog-image">
+    <img src="img/public.avif" alt="Car and Bike Consultant">
+  </div>
+
+  <div class="blog-content">
+
+    <h2>Introduction</h2>
+    <p>
+      Buying a car or bike is a major decision that affects your daily life and finances. 
+      With so many options available, choosing the right vehicle can feel overwhelming. 
+      Many people end up selecting vehicles based on looks or brand popularity, only to regret later.
+    </p>
+
+    <p>
+      A Car & Bike Consultant helps you avoid confusion by providing expert guidance, 
+      real-world insights, and personalized recommendations based on your needs.
+    </p>
+
+    <h2>Why Choosing the Right Vehicle Matters</h2>
+    <p>
+      A vehicle is not just transportation—it’s a long-term investment. The wrong choice can lead to:
+    </p>
+    <ul>
+      <li>High maintenance costs</li>
+      <li>Poor mileage</li>
+      <li>Uncomfortable driving experience</li>
+      <li>Low resale value</li>
+    </ul>
+
+    <p>
+      The right choice ensures comfort, savings, and peace of mind.
+    </p>
+
+    <h2>What Does a Consultant Do?</h2>
+
+    <h3>1. Understanding Your Needs</h3>
+    <p>
+      Everyone has different requirements. A consultant analyzes your budget, daily usage, 
+      and expectations to suggest the best options.
+    </p>
+
+    <h3>2. Honest Reviews</h3>
+    <p>
+      Get real-world insights about performance, mileage, maintenance, and reliability—not just marketing claims.
+    </p>
+
+    <h3>3. Smart Comparisons</h3>
+    <p>
+      Confused between two models? A consultant compares them clearly to help you decide.
+    </p>
+
+    <h3>4. Personalized Suggestions</h3>
+    <p>
+      Instead of random lists, you get recommendations tailored specifically for your lifestyle.
+    </p>
+
+    <h2>Who Should Use This Service?</h2>
+    <ul>
+      <li>First-time buyers</li>
+      <li>Students looking for budget bikes</li>
+      <li>Families buying cars</li>
+      <li>Daily commuters</li>
+      <li>People upgrading vehicles</li>
+    </ul>
+
+    <h2>Key Factors to Consider Before Buying</h2>
+
+    <h3>Budget Planning</h3>
+    <p>
+      Consider not only the purchase price but also fuel, maintenance, and insurance costs.
+    </p>
+
+    <h3>Fuel Efficiency</h3>
+    <p>
+      Important for daily users to reduce long-term expenses.
+    </p>
+
+    <h3>Usage Purpose</h3>
+    <p>
+      Choose based on your need—city commute, long drives, or mixed usage.
+    </p>
+
+    <h3>Maintenance & Service</h3>
+    <p>
+      Pick vehicles with good service availability and affordable spare parts.
+    </p>
+
+    <h3>Resale Value</h3>
+    <p>
+      Some vehicles retain better value over time, helping you in future upgrades.
+    </p>
+
+    <h2>Our Approach</h2>
+    <p>
+      We focus on giving practical, honest, and easy-to-understand advice:
+    </p>
+    <ul>
+      <li>✔ Personalized recommendations</li>
+      <li>✔ Real user insights</li>
+      <li>✔ No biased suggestions</li>
+      <li>✔ Simple explanations</li>
+    </ul>
+
+    <h2>Useful Resources</h2>
+    <ul>
+        <li><a href="http://cardekho.com/india-car-news.htm">CarDekho – Latest Car News & Updates</a></li>
+        <li><a href="https://mycarjunction.com/compare-cars">Compare Cars Online (MyCarJunction)</a></li>
+        <li><a href="https://parkplus.io/compare-cars">Park+ Car Comparison Tool</a></li>
+        <li><a href="https://www.carwale.com/news/page/4/">CarWale – Latest Car News & Updates</a></li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      Choosing the right vehicle doesn’t have to be stressful. With proper guidance, 
+      you can make a confident and smart decision.
+    </p>
+
+    <p>
+      A Car & Bike Consultant helps you save time, avoid mistakes, and choose the perfect vehicle.
+    </p>
+
+    <div class="cta-box">
+      <h3>Ready to Choose the Right Vehicle?</h3>
+      <p>Get expert guidance and make a confident decision today.</p>
+      <a href="contact.html" class="cta-btn">Contact Now</a>
     </div>
-    <!-- Team End -->
+
+  </div>
+</section>
 
 
     <!-- Vendor Start -->
