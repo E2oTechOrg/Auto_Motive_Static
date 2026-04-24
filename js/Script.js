@@ -72,14 +72,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
   const closeBtn = document.getElementById("closeModal");
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+
+  let images = document.querySelectorAll(".rent-item img");
+  let currentIndex = 0;
 
   // Only run if modal exists
   if (modal && modalImg && closeBtn) {
 
-    document.querySelectorAll(".rent-item img").forEach(img => {
+    images.forEach((img, index) => {
       img.addEventListener("click", function () {
         modal.style.display = "block";
         modalImg.src = this.src;
+        currentIndex = index;
       });
     });
 
@@ -90,6 +96,28 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
       }
     };
+
+    if (nextBtn) {
+      nextBtn.onclick = () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        modalImg.src = images[currentIndex].src;
+      };
+    }
+
+    if (prevBtn) {
+      prevBtn.onclick = () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        modalImg.src = images[currentIndex].src;
+      };
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (modal.style.display === "block") {
+        if (e.key === "ArrowRight") nextBtn.click();
+        if (e.key === "ArrowLeft") prevBtn.click();
+        if (e.key === "Escape") modal.style.display = "none";
+      }
+    });
 
   }
 
