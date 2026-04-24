@@ -27,305 +27,250 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .blog-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-header p {
+  color: #555;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.blog-content h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.blog-content h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.blog-content p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.blog-content li {
+  margin-bottom: 8px;
+}
+
+.cta-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* Ensure all text inside is white */
+.cta-box h3,
+.cta-box p {
+  color: white;
+}
+
+/* Button styling */
+.cta-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #000; /* keep button text black for contrast */
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+    </style>
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
-        <div class="row">
-            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</a>
-                    <span class="text-body">|</span>
-                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>info@example.com</a>
-                </div>
-            </div>
-            <div class="col-md-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-body pl-3" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1">Royal Cars</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cars</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="car.html" class="dropdown-item">Car Listing</a>
-                                <a href="detail.html" class="dropdown-item">Car Detail</a>
-                                <a href="booking.html" class="dropdown-item">Car Booking</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="team.html" class="dropdown-item active">The Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-
-
-    <!-- Search Start -->
-    <div class="container-fluid bg-white pt-3 px-lg-5">
-        <div class="row mx-n2">
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Pickup Location</option>
-                    <option value="1">Location 1</option>
-                    <option value="2">Location 2</option>
-                    <option value="3">Location 3</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Drop Location</option>
-                    <option value="1">Location 1</option>
-                    <option value="2">Location 2</option>
-                    <option value="3">Location 3</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="date mb-3" id="date" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
-                        data-target="#date" data-toggle="datetimepicker" />
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="time mb-3" id="time" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
-                        data-target="#time" data-toggle="datetimepicker" />
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Select A Car</option>
-                    <option value="1">Car 1</option>
-                    <option value="2">Car 1</option>
-                    <option value="3">Car 1</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
-            </div>
-        </div>
-    </div>
-    <!-- Search End -->
+ <!-- HEADER -->
+    <div id="header-container"></div>
 
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header">
-        <h1 class="display-3 text-uppercase text-white mb-3">The Team</h1>
+        <h1 class="display-3 text-uppercase text-white mb-3">Blog</h1>
         <div class="d-inline-flex text-white">
             <h6 class="text-uppercase m-0"><a class="text-white" href="">Home</a></h6>
             <h6 class="text-body m-0 px-3">/</h6>
-            <h6 class="text-uppercase text-body m-0">The Team</h6>
+            <h6 class="text-uppercase text-body m-0">Blog</h6>
         </div>
     </div>
     <!-- Page Header Start -->
 
+<!-- blog -->
+<section class="blog-container">
+  <div class="blog-header">
+    <h1>Car & Bike Consultant – Smart Buying Guide</h1>
+    <p>
+      Learn how to choose the right car or bike based on budget, performance, and real-world usage.
+    </p>
+  </div>
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="blog-image">
+    <img src="img/public.avif" alt="Car and Bike Consultant">
+  </div>
+
+  <div class="blog-content">
+
+    <h2>Introduction</h2>
+    <p>
+      Buying a car or bike is a major decision that affects your daily life and finances. 
+      With so many options available, choosing the right vehicle can feel overwhelming. 
+      Many people end up selecting vehicles based on looks or brand popularity, only to regret later.
+    </p>
+
+    <p>
+      A Car & Bike Consultant helps you avoid confusion by providing expert guidance, 
+      real-world insights, and personalized recommendations based on your needs.
+    </p>
+
+    <h2>Why Choosing the Right Vehicle Matters</h2>
+    <p>
+      A vehicle is not just transportation—it’s a long-term investment. The wrong choice can lead to:
+    </p>
+    <ul>
+      <li>High maintenance costs</li>
+      <li>Poor mileage</li>
+      <li>Uncomfortable driving experience</li>
+      <li>Low resale value</li>
+    </ul>
+
+    <p>
+      The right choice ensures comfort, savings, and peace of mind.
+    </p>
+
+    <h2>What Does a Consultant Do?</h2>
+
+    <h3>1. Understanding Your Needs</h3>
+    <p>
+      Everyone has different requirements. A consultant analyzes your budget, daily usage, 
+      and expectations to suggest the best options.
+    </p>
+
+    <h3>2. Honest Reviews</h3>
+    <p>
+      Get real-world insights about performance, mileage, maintenance, and reliability—not just marketing claims.
+    </p>
+
+    <h3>3. Smart Comparisons</h3>
+    <p>
+      Confused between two models? A consultant compares them clearly to help you decide.
+    </p>
+
+    <h3>4. Personalized Suggestions</h3>
+    <p>
+      Instead of random lists, you get recommendations tailored specifically for your lifestyle.
+    </p>
+
+    <h2>Who Should Use This Service?</h2>
+    <ul>
+      <li>First-time buyers</li>
+      <li>Students looking for budget bikes</li>
+      <li>Families buying cars</li>
+      <li>Daily commuters</li>
+      <li>People upgrading vehicles</li>
+    </ul>
+
+    <h2>Key Factors to Consider Before Buying</h2>
+
+    <h3>Budget Planning</h3>
+    <p>
+      Consider not only the purchase price but also fuel, maintenance, and insurance costs.
+    </p>
+
+    <h3>Fuel Efficiency</h3>
+    <p>
+      Important for daily users to reduce long-term expenses.
+    </p>
+
+    <h3>Usage Purpose</h3>
+    <p>
+      Choose based on your need—city commute, long drives, or mixed usage.
+    </p>
+
+    <h3>Maintenance & Service</h3>
+    <p>
+      Pick vehicles with good service availability and affordable spare parts.
+    </p>
+
+    <h3>Resale Value</h3>
+    <p>
+      Some vehicles retain better value over time, helping you in future upgrades.
+    </p>
+
+    <h2>Our Approach</h2>
+    <p>
+      We focus on giving practical, honest, and easy-to-understand advice:
+    </p>
+    <ul>
+      <li>✔ Personalized recommendations</li>
+      <li>✔ Real user insights</li>
+      <li>✔ No biased suggestions</li>
+      <li>✔ Simple explanations</li>
+    </ul>
+
+    <h2>Useful Resources</h2>
+    <ul>
+        <li><a href="http://cardekho.com/india-car-news.htm">CarDekho – Latest Car News & Updates</a></li>
+        <li><a href="https://mycarjunction.com/compare-cars">Compare Cars Online (MyCarJunction)</a></li>
+        <li><a href="https://parkplus.io/compare-cars">Park+ Car Comparison Tool</a></li>
+        <li><a href="https://www.carwale.com/news/page/4/">CarWale – Latest Car News & Updates</a></li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      Choosing the right vehicle doesn’t have to be stressful. With proper guidance, 
+      you can make a confident and smart decision.
+    </p>
+
+    <p>
+      A Car & Bike Consultant helps you save time, avoid mistakes, and choose the perfect vehicle.
+    </p>
+
+    <div class="cta-box">
+      <h3>Ready to Choose the Right Vehicle?</h3>
+      <p>Get expert guidance and make a confident decision today.</p>
+      <a href="contact.html" class="cta-btn">Contact Now</a>
     </div>
-    <!-- Team End -->
+
+  </div>
+</section>
 
 
     <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="owl-carousel vendor-carousel">
-                <div class="bg-light p-4">
-                    <img src="img/vendor-1.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-2.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-3.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-4.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-5.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-6.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-7.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-8.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Vendor End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope text-white mr-3"></i>info@example.com</p>
-                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
-                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Help & FQAs</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
-                <div class="row mx-n1">
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-1.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-2.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
-                <p class="mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                <div class="w-100 mb-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-                <i>Lorem sit sed elitr sed kasd et</i>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
-        <p class="mb-2 text-center text-body">&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
-		
-		<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->					
-        <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-    </div>
+   <!-- Footer Start -->
+   <div id="footer-container"></div>
     <!-- Footer End -->
 
 
@@ -345,6 +290,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/Script.js"></script>
 </body>
 
 </html>
