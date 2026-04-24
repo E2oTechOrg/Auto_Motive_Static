@@ -5,6 +5,10 @@
     --light: #F4F5F8;
     --dark: #1C1E32;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -185,6 +189,9 @@ select.form-control option[value=""] {
     max-width: 95% !important;
     max-height: 80% !important;
     margin-top: 60px !important;
+  }
+  #imageCounter{
+    left:7% !important;
   }
 
 }
