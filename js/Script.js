@@ -74,10 +74,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.getElementById("closeModal");
   const nextBtn = document.getElementById("nextBtn");
   const prevBtn = document.getElementById("prevBtn");
+  const counter = document.getElementById("imageCounter");
 
   let images = document.querySelectorAll(".rent-item img");
   let currentIndex = 0;
 
+  function updateCounter() {
+    counter.textContent = `${currentIndex + 1} / ${images.length}`;
+  }
   // Only run if modal exists
   if (modal && modalImg && closeBtn) {
 
@@ -86,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "block";
         modalImg.src = this.src;
         currentIndex = index;
+        updateCounter();
       });
     });
 
@@ -101,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextBtn.onclick = () => {
         currentIndex = (currentIndex + 1) % images.length;
         modalImg.src = images[currentIndex].src;
+        updateCounter();
       };
     }
 
@@ -108,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       prevBtn.onclick = () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         modalImg.src = images[currentIndex].src;
+        updateCounter();  
       };
     }
 
