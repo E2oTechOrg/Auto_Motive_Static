@@ -5,9 +5,10 @@
     --light: #F4F5F8;
     --dark: #1C1E32;
 }
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+@media (max-width: 768px) {
+  html,body {
+    overflow-x: hidden;
+  }
 }
 
 h1,
