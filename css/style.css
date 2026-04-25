@@ -5,10 +5,10 @@
     --light: #F4F5F8;
     --dark: #1C1E32;
 }
-html, body {
+/* html, body {
   width: 100%;
   overflow-x: hidden;
-}
+} */
 
 h1,
 h2,
