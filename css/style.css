@@ -97,7 +97,7 @@ h6,
 .navbar-brand span {
     font-family: 'Cinzel', serif;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: all 0.3s ease;
     display: inline-block;
@@ -134,8 +134,51 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar-dark .navbar-nav .nav-link  {
-        padding: 10px 15px;
+ 
+    /* Fix navbar background */
+    .nav-bar::before,
+    .nav-bar::after {
+        display: none;
+    }
+    .navbar-brand img {
+    height: 50px !important;
+    width: auto !important;
+  }
+
+    .nav-bar {
+        
+        position: relative;
+    }
+
+    /* Center menu items */
+    .navbar-nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Improve link spacing */
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 12px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    /* Remove underline animation for mobile (clean look) */
+    .navbar-dark .navbar-nav .nav-link::after {
+        display: none;
+    }
+
+    /* Active / hover effect */
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link.active {
+        background: rgba(255,255,255,0.1);
+        border-radius: 5px;
+    }
+
+    /* Brand adjustment */
+    .navbar-brand span {
+        font-size: 16px;
+        white-space: nowrap;
     }
 }
 /* Placeholder (default) */
@@ -620,6 +663,16 @@ select.form-control option[value=""] {
   height: 120px;
   object-fit: cover;
   border-radius: 10px;
+}
+@media (max-width: 991.98px) {
+  .image-stack {
+    width: 100%;              /* take full width */
+    margin: 0 auto 15px;      /* center + spacing */
+  }
+
+  .image-stack img {
+    height: 100px;            /* slightly smaller */
+  }
 }
 
 /* VS Text */
