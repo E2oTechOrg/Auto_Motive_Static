@@ -41,7 +41,7 @@ h6,
 
 .btn-lg-square {
     width: 46px;
-    height: 46px;
+    height: 40px;
 }
 
 .btn-square,
@@ -49,6 +49,7 @@ h6,
 .btn-lg-square {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
     text-align: center;
 }
 
@@ -81,18 +82,55 @@ h6,
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    padding: 30px 15px;
+    padding: 15px 15px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 550;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--light);
     outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.navbar-brand span {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.navbar-brand span:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+    transform: scale(1.08);
+}
+/* underline */
+.navbar-dark .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    font-weight: 600;
+    left: 50%;
+    bottom: 6px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* hover effect */
+.navbar-dark .navbar-nav .nav-link:hover::after {
+    width: 70%;
+    transition: width 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: var(--primary);
+    letter-spacing: 1.5px
 }
 
 @media (max-width: 991.98px) {
@@ -227,7 +265,7 @@ select.form-control option[value=""] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)),url(../img/userfeedback.png);
+    background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)),url(../img/buying1.avif);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;        
@@ -314,7 +352,7 @@ select.form-control option[value=""] {
     object-fit: cover;   /* makes image fill nicely */
 }
 .service-item {
-    height: 360px;
+    height: 350px;
     background: var(--light);
     transition: .5s;
 }
@@ -402,7 +440,7 @@ select.form-control option[value=""] {
 
 #footer .btn-lg-square:hover {
   background-color: #ffc107;
-  color: #000;
+  color: #000 !important;
   transform: translateY(-5px) scale(1.1);
 }
 
@@ -440,8 +478,8 @@ select.form-control option[value=""] {
     letter-spacing: 1px;
 }
 .footer-logo {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
 }
 
@@ -449,6 +487,7 @@ select.form-control option[value=""] {
     font-size: 20px;
     font-weight: 600;
 }
+
 #footer p {
     display: flex;
     align-items: flex-start;
@@ -492,51 +531,103 @@ select.form-control option[value=""] {
     margin-right: 0 !important;
   }
 }
+
 /* ===== FEATURE CARDS HOVER ===== */
 
 .feature-card {
-  transition: all 0.4s ease;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
+  background: #f8f9fa;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* Lift + shadow */
 .feature-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  background: var(--secondary);
+  color: #ffff !important;
+}
+.feature-card:hover h5,
+.feature-card:hover p {
+  color: #fff;
 }
 
-/* Icon animation */
-.feature-card i {
-  transition: all 0.4s ease;
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  background: var(--secondary);
+  color: #fff;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
-.feature-card:hover i {
-  transform: rotate(10deg) scale(1.2);
+.feature-card:hover .icon-box {
+  background: #fff;
+  color: #007bff;
 }
 
-/* Background overlay effect */
-.feature-card::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(255, 193, 7, 0.15); /* light yellow */
-  transition: 0.4s;
-  z-index: 0;
+.feature-card p {
+  font-size: 14px;
+  margin: 0;
 }
 
-.feature-card:hover::before {
+/* about */
+.why-list {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: auto;
+}
+
+.why-list li {
+  background: #f8f9fa;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.why-list li::before {
+  content: "✔";
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.why-list li:hover {
+  background: var(--secondary);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Image Stack */
+.image-stack {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Images */
+.image-stack img {
   width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/* Keep content above overlay */
-.feature-card * {
-  position: relative;
-  z-index: 1;
+/* VS Text */
+.vs-text {
+  color: #fff;
+  font-weight: bold;
+  margin: 12px 0;
+  font-size: 18px;
 }
 .banner-box {
   transition: all 0.4s ease;
@@ -606,6 +697,15 @@ select.form-control option[value=""] {
 .service-item.active:hover {
   background: #ffc107 !important;
   color: #fff !important;
+}
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.service-link:hover {
+  text-decoration: none;
 }
 /* ===== CONTACT SECTION HOVER ===== */
 
@@ -809,7 +909,7 @@ select.form-control option[value=""] {
 }
 
 .bg-banner {
-    background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url(../img/IMG_3225.JPG);
+    background: linear-gradient(rgba(28, 30, 50, .8), rgba(28, 30, 50, .8 )), url(../img/IMG_3225.JPG);
     background-attachment: fixed;
     background-size: cover;        /* makes image fill the section */
     background-position: center;   /* keeps image centered */
