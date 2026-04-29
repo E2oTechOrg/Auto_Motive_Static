@@ -120,19 +120,37 @@
             <div class="row">
 
                 <!-- Mission -->
-                <div class="col-lg-6 mb-4"  data-aos="fade-right">
-                    <div class="p-5 text-center h-100 mission-card"
-                         style="background: transparent; border-radius: 15px;">
-
-                        <i class="fa fa-bullseye text-primary mb-4" style="font-size: 45px;"></i>
-
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="p-5 text-center h-100 mission-card" style="background: transparent; border-radius: 15px;">
+                
+                        <!-- Target Icon -->
+                        <div class="mission-icon mb-4 text-primary">
+                            <svg width="60" height="60" viewBox="0 0 512 512">
+                        
+                                <!-- Outer circle -->
+                                <circle cx="256" cy="256" r="256" fill="currentColor" />
+                        
+                                <!-- Rings -->
+                                <circle cx="256" cy="256" r="180" fill="#ffffff" />
+                                <circle cx="256" cy="256" r="120" fill="currentColor" />
+                                <circle cx="256" cy="256" r="60" fill="#ffffff" />
+                        
+                                <!-- Arrow -->
+                                <line x1="256" y1="256" x2="420" y2="120" stroke="currentColor" stroke-width="28" stroke-linecap="round" />
+                        
+                                <!-- Arrow head -->
+                                <polygon points="420,120 460,140 440,180" fill="currentColor" />
+                        
+                            </svg>
+                        </div>
+                
                         <h2 class="text-uppercase text-primary mb-3">Our Mission</h2>
-
+                
                         <p class="text-light" style="font-size: 17px;">
-                            Our mission is to help people choose and drive bikes and cars with complete 
+                            Our mission is to help people choose and drive bikes and cars with complete
                             peace of mind by providing honest reviews, comparisons, and real user insights.
                         </p>
-
+                
                     </div>
                 </div>
 
